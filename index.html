@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <!-- For responsive purpose -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nauffal Portofolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <h2>Nauffal</h2>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#certificate">Certificate</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Home Content Start -->
+    <section id="home">
+      <h1>Hi, <span id="username"></span>!</h1>
+      <h2>Saya Muhammad Nauffal Ramdhani</h2>
+      <h2>I'am a <span id="job-title"></span></h2>
+
+      <div class="social-icon">
+        <a
+          href="https://www.instagram.com/nauffal.rn?igsh=MTYzbTNjaDMwcWhuNg=="
+        >
+          <div class="icon-wrapper">
+            <img src="assets/Instagram.svg" alt="Instagram" />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/mnauffalr/">
+          <div class="icon-wrapper">
+            <img src="assets/LinkedIn.svg" alt="LinkedIn" />
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Content Start -->
+    <section id="about">
+      <div class="about-container">
+        <img
+          src="assets/nauffal.jpg"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <div class="about-text">
+          <h2>Hallo 👋 I'am <span>Muhammad Nauffal Ramdhani</span></h2>
+          <h3>
+            A <span>Fullstack Developer 💻</span> based in
+            <span>Indonesia</span> 🌏
+          </h3>
+          <p>
+            I am an Informatics student at Telkom University with a strong
+            passion for software development, particularly in Fullstack
+            Development. Throughout my academic journey, I have been actively
+            involved in team-based projects, allowing me to develop
+            collaboration and problem-solving skills.
+          </p>
+
+          <p>
+            With a solid foundation in coding, logical thinking, and numerical
+            analysis, I enjoy tackling complex challenges and creating efficient
+            solutions. I am always eager to learn new technologies and improve
+            my technical skills to build scalable and high-quality software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Content Start -->
+    <section id="project">
+      <h2>My Project</h2>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="assets/SocialNews.png" alt="Project 1" />
+          <h3>Social News</h3>
+          <p>
+            Website Baca Berita Terkini dan Terupdate di Indonesia
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="assets/Lapangin.png" alt="Project 2" />
+          <h3>Lapangin</h3>
+          <p>Website Booking Lapangan Seluruh Indonesia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Content Start -->
+    <section id="certificate">
+      <h2>My Certificate</h2>
+      <div class="certificate-gallery">
+        <div class="certificate-card">
+          <img src="assets/Belajar Dasar Pemrograman JavaScript - Dicoding.jpg" alt="Certificate 1" />
+          <p>Belajar Dasar Pemrograman JavaScript - Dicoding</p>
+        </div>
+        <div class="certificate-card">
+          <img src="assets/Sertifikat Fundamental Front-End Web I.jpg" alt="Certificate 2" />
+          <p>Fundamental Front-End Web I</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content Start -->
+    <section id="contact">
+      <div class="message-form" id='messages'>
+        <h2 >Message Us</h2>
+        <input type="text" id="name" placeholder="Nama Lengkap" required>
+            <select id="gender">
+                <option value="">-- Jenis Kelamin --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+        </select>
+        <label for="birthDate"></label>
+        <input type="date" id="birthDate">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="phone" placeholder="Nomor Telepon" required>
+        <textarea id="message" rows="4" placeholder="Pesan" required></textarea>
+        <button id="submit">Kirim Pesan</button>      
+    </div>
+    <div class="result" id="result" style="display:none;">
+        <h3>Pesan Kamu:</h3>
+        <div id="displayDateTime"></div>
+        <p id="displayName"></p>
+        <div id="displayGender"></div>
+        <p id="displayEmail"></p>
+        <div id="displayBirthDate"></div>
+        <p id="displayPhone"></p>
+        <p id="displayMessage"></p>
+    </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer>
+      <p>&copy; 2025 Nauffal's Portfolio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
